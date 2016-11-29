@@ -72,6 +72,6 @@ a:link {
 }
 
 .jumbotron:hover {
-	box-shadow: 0 0 20px #ccc;
-	transform: translateY(10px);
+	box-shadow: 0 0 20px #eee;
+	transform: translateY(-5px);
 }
