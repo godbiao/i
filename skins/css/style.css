@@ -78,6 +78,13 @@ a:link {
 }
 
 
+/*BANNER*/
+
+#banner img {
+	width: 100%;
+}
+
+
 /*皮肤列表*/
 
 #skinlist {
@@ -88,12 +95,23 @@ a:link {
 .col-xs-4 {
 	padding-left: 4px;
 	padding-right: 4px;
+	cursor: pointer;
+}
+
+.row-title {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.row-title span {
+	margin-right: 2px;
+	color: #ccc;
 }
 
 .thumbnail {
 	border: none;
 	padding: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 9px;
 }
 
 .thumbnail .caption {
