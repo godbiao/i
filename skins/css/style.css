@@ -51,8 +51,10 @@ a:link {
 }
 
 .row-title span {
-	margin-right: 2px;
-	color: #ccc;
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	border-left: 2px solid #ccc;
 }
 
 .thumbnail {
