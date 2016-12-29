@@ -34,7 +34,6 @@ a:link {
 
 .version {
 	display: block;
-	line-height: 40px;
 }
 
 .download {
@@ -90,7 +89,6 @@ a:link {
 
 .panel-heading {
 	transition: background .3s linear;
-	padding: 0px 20px;
 }
 
 .panel-heading:hover {
