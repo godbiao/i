@@ -22,6 +22,7 @@ body {
 	border: 1px solid #ccc;
 	margin-top: 50px;
 	box-shadow: 0 0 50px #ccc;
+	overflow: hidden;
 }
 
 ul {
@@ -155,4 +156,38 @@ li:active {
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 12px;
+}
+
+
+/*彩蛋*/
+
+.cd {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 999;
+}
+
+.cd1 {
+	background: #FF00FF;
+	animation: cd1 linear 5s 1;
+}
+
+@-webkit-keyframes cd1 {
+	0% {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	12% {
+		margin-top: 50px;
+		margin-left: 60px;
+	}
+	16% {
+		margin-top: 20px;
+		margin-left: 60px;
+	}
+	100% {
+		margin-top: 550px;
+		margin-left: 360px;
+	}
 }
