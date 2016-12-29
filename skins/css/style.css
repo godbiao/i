@@ -80,6 +80,12 @@ a:link {
 
 /*皮肤列表*/
 
+#skinlist {
+	padding-left: 10px;
+	padding-right: 10px;
+	;
+}
+
 .col-xs-4 {
 	padding-left: 2px;
 	padding-right: 2px;
