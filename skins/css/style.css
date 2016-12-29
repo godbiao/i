@@ -76,3 +76,8 @@ a:link {
 .panel-heading:hover {
 	background: #fff;
 }
+
+.col-xs-4 {
+	padding-left: 2px;
+	padding-right: 2px;
+}
