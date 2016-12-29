@@ -77,7 +77,24 @@ a:link {
 	background: #fff;
 }
 
+
+/*皮肤列表*/
+
 .col-xs-4 {
 	padding-left: 2px;
 	padding-right: 2px;
+}
+
+.thumbnail {
+	border: none;
+	padding: 0px;
+	margin-bottom: 5px;
+}
+
+.thumbnail .caption {
+	padding: 2px;
+}
+
+.thumbnail .skin-preview {
+	border-radius: 5px;
 }
