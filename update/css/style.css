@@ -78,6 +78,7 @@ a:link {
 
 .jumbotron {
 	padding: 20px;
+	margin-bottom: 15px;
 	transition: box-shadow .2s linear, transform .3s linear, background .2s linear;
 }
 
