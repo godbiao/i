@@ -124,3 +124,8 @@ a:link {
 .thumbnail .skin-preview {
 	border-radius: 5px;
 }
+
+.thumbnail .skin-name {
+	color: #343434;
+	font-size: 14px;
+}
