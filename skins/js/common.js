@@ -12,4 +12,10 @@ $(document).ready(function () {
 
 	});
 
+	$(".banner-weibo").click(function () {
+
+		window.location.href = "http://m.weibo.cn/u/1136590322";
+
+	});
+
 });
