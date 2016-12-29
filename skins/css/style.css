@@ -83,12 +83,11 @@ a:link {
 #skinlist {
 	padding-left: 10px;
 	padding-right: 10px;
-	;
 }
 
 .col-xs-4 {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 .thumbnail {
