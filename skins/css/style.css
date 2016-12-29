@@ -15,9 +15,7 @@ a:link {
 }
 
 .split {
-	width: 500%;
 	height: 10px;
-	margin-left: -50%;
 	background-color: #efeff0;
 }
 
@@ -35,7 +33,7 @@ a:link {
 
 /*皮肤列表*/
 
-#skinlist {
+.skinlist {
 	padding-top: 9px;
 	padding-left: 9px;
 	padding-right: 9px;

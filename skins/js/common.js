@@ -8,9 +8,8 @@ $(document).ready(function () {
 
 	$("#skin-id").click(function () {
 
-		window.location.href = "item.html"
+		window.location.href = "item.html";
 
 	});
-
 
 });
