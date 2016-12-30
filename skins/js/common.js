@@ -6,9 +6,11 @@ $(document).ready(function () {
 		NProgress.done();
 	});
 
-	$("#skin-id").click(function () {
 
-		window.location.href = "item.html";
+
+	$(".skin-id").click(function () {
+		var skinID = $('.skin-id').attr('id');
+		window.location.href = "item.html?id=" + skinID;
 
 	});
 

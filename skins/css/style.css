@@ -1,8 +1,8 @@
 body {
 	font-family: serif, sans-serif;
-	background-color: #efeff0;
+	/*	background-color: #efeff0;*/
 	overflow-x: hidden;
-	min-height: 1920px;
+	padding-bottom: 50px;
 }
 
 #item {
@@ -15,9 +15,7 @@ a:link {
 	text-decoration: none;
 }
 
-.container {
-	background-color: #fff;
-}
+.container {}
 
 .split {
 	height: 10px;
@@ -44,7 +42,8 @@ a:link {
 	padding-right: 9px;
 }
 
-.col-xs-4 {
+.col-xs-4,
+.col-xs-6 {
 	padding-left: 4px;
 	padding-right: 4px;
 	cursor: pointer;
@@ -59,7 +58,20 @@ a:link {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	border-left: 2px solid #ccc;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.vline-blue {
+	border-left-color: #54e5d6;
+}
+
+.vline-green {
+	border-left-color: #b1d835;
+}
+
+.vline-red {
+	border-left-color: #f59074;
 }
 
 .thumbnail {
@@ -74,11 +86,13 @@ a:link {
 
 .thumbnail .skin-preview {
 	border-radius: 5px;
+	width: 100%;
 }
 
 .thumbnail .skin-name {
 	color: #343434;
-	font-size: 14px;
+	font-size: 12px;
+	text-align: center;
 }
 
 
