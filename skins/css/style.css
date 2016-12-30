@@ -15,11 +15,19 @@ a:link {
 	text-decoration: none;
 }
 
-.container {}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 
 .split {
 	height: 10px;
 	background-color: #efeff0;
+}
+
+.none {
+	display: none;
 }
 
 
@@ -113,4 +121,8 @@ a:link {
 
 .skin-info {
 	text-align: center;
+}
+
+.skin-details-preview img {
+	width: 100%;
 }

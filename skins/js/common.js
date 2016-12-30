@@ -41,4 +41,11 @@ $(document).ready(function () {
 		window.location.href = "res/it/" + skinID + ".it";
 	});
 
+
+	//预览图切换	
+	$(".preview").click(function () {
+		$(this).addClass("none").siblings().removeClass("none");
+	})
+
+
 });
