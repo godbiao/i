@@ -132,7 +132,7 @@ ul {
     transition: opacity 0.2s, transform 0.2s;
 }
 
-#item .skin-details-preview img:active {
+#item .skin-details-preview img:hover {
     opacity: 0.75;
     transform: scale(0.95);
 }
