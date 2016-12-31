@@ -47,19 +47,6 @@ switch (skinID) {
 }
 
 
-
-
-//预览图切换	
-$(".preview").click(function () {
-    $(this).addClass("none").siblings().removeClass("none");
-})
-
-//下载皮肤
-$(".skin-download").click(function () {
-    window.location.href = "res/it/" + skinID + ".it";
-});
-
-
 //下面是一些函数
 
 //替换皮肤信息
@@ -75,16 +62,28 @@ function skinInfo(name, author, size, description, update, star, type) {
         $(".skin-description-update").html(update);
     }
 
-    $("title").html(name + " - " + author + " - " + title);
     if (type == "gif") {
         //预览图
         $(".preview_9").attr("src", "res/it/" + skinID + ".gif");
         $(".preview_26").hide();
     } else {
-        //预览图
+        //预览图切换	
+        $(".preview").click(function () {
+                $(this).addClass("none").siblings().removeClass("none");
+            })
+            //预览图
         $(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
         $(".preview_26").attr("src", "res/it/" + skinID + "_26.jpg");
     }
+
+
+    //下载皮肤
+    $(".skin-download").click(function () {
+        window.location.href = "res/it/" + skinID + ".it";
+    });
+
+    //全局标题
+    $("title").html(name + " - " + author + " - " + title);
 }
 
 //获取皮肤ID
