@@ -1,128 +1,153 @@
 body {
-	font-family: serif, sans-serif;
-	/*	background-color: #efeff0;*/
-	overflow-x: hidden;
-	padding-bottom: 100px;
+    font-family: serif, sans-serif;
+    /*	background-color: #efeff0;*/
+    overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 #item {
-	padding-top: 50px;
-	background-color: #fff;
+    padding-top: 30px;
+    background-color: #fff;
 }
 
 a,
 a:link {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .split {
-	height: 10px;
-	background-color: #efeff0;
+    height: 10px;
+    background-color: #efeff0;
 }
 
 .none {
-	display: none;
+    display: none;
+}
+
+.center {
+    text-align: center;
 }
 
 
 /*BANNER*/
 
 #banner {
-	width: 100%;
+    width: 100%;
 }
 
 #banner img {
-	width: 100%;
+    width: 100%;
 }
 
 
 /*皮肤列表*/
 
 .skinlist {
-	padding-top: 9px;
-	padding-left: 9px;
-	padding-right: 9px;
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 .col-xs-4,
 .col-xs-6 {
-	padding-left: 4px;
-	padding-right: 4px;
-	cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
 }
 
 .row-title {
-	margin-top: 4px;
-	margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .row-title span {
-	display: inline-block;
-	width: 5px;
-	height: 10px;
-	border-left-width: 2px;
-	border-left-style: solid;
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    border-left-width: 2px;
+    border-left-style: solid;
 }
 
 .vline-blue {
-	border-left-color: #54e5d6;
+    border-left-color: #54e5d6;
 }
 
 .vline-green {
-	border-left-color: #b1d835;
+    border-left-color: #b1d835;
 }
 
 .vline-red {
-	border-left-color: #f59074;
+    border-left-color: #f59074;
 }
 
 .thumbnail {
-	border: none;
-	padding: 0px;
-	margin-bottom: 9px;
+    border: none;
+    padding: 0px;
+    margin-bottom: 9px;
 }
 
 .thumbnail .caption {
-	padding: 2px;
+    padding: 2px;
 }
 
 .thumbnail .skin-preview {
-	border-radius: 5px;
-	width: 100%;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .thumbnail .skin-name {
-	color: #343434;
-	font-size: 12px;
-	text-align: center;
+    color: #343434;
+    font-size: 12px;
+    text-align: center;
 }
 
 
 /*皮肤详情*/
 
 #item .navbar-fixed-top {
-	background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 #item .navbar-fixed-bottom {
-	background-color: rgba(247, 247, 247, 0.9);
+    background-color: rgba(247, 247, 247, 0.9);
 }
 
-.skin-name-title {
-	color: #181818;
-	text-align: center;
+#item .skin-name {
+    color: #181818;
+    text-align: center;
 }
 
-.skin-info {
-	text-align: center;
+#item .skin-sas {
+    text-align: center;
 }
 
-.skin-details-preview img {
-	width: 100%;
+#item .skin-details-preview img {
+    width: 100%;
+}
+
+#item .back {
+    float: left;
+    position: absolute;
+}
+
+#item .share {
+    float: left;
+    position: absolute;
+}
+
+#item .like {
+    display: block;
+    right: 0px;
+    position: absolute;
+}
+
+#item .skin-download {
+    width: 50%;
+    border-radius: 100px;
 }
