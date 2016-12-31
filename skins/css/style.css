@@ -129,12 +129,12 @@ ul {
 
 #item .skin-details-preview img {
     width: 100%;
-    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 #item .skin-details-preview img:hover {
     opacity: 0.75;
-    transform: scale(0.95);
+    transform: scale(0.75);
 }
 
 #item .back {
