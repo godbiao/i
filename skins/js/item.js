@@ -69,7 +69,7 @@ function skinInfo(name, author, size, description, update, star, type) {
     } else {
         //预览图切换	
         $(".preview").click(function () {
-                $(this).addClass("none").siblings().removeClass("none");
+                $(this).hide(100).addClass("none").siblings().removeClass("none").show(100);
             })
             //预览图
         $(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
