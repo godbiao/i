@@ -14,7 +14,7 @@ switch (skinID) {
             "54KB",
             "基于讯飞输入法官方默认韵白皮肤修改而成： <br> 1. 按钮圆角等微调， 按下及气泡效果不闪眼 <br> 2. 字母配色调整 整体更柔和 <br> 3. 你要的大空格, 支持了26键 <br> 4. 更换了难看的默认字体 <br> 5. 超小皮肤包， 低内存占用， 更流畅 ",
             "--2016年12月13日<br>修复 修复点划布局9键拼音分词在部分版本上显示异常问题 <br>优化 将难以理解的分词符号【’】 修改为文字【 分词】 <br>优化 调小了按键气泡背景（ 设置 - 键盘设置 - 开启按键气泡）<br>--2016 年12月03日 <br>修复 修复AB键盘‘ 发送键’ 错位问题<br> --2016 年11月30日 <br>优化 去除A / L键左右侧盲区 <br>优化 增大ab及退格键的间距, 减小误触概率 <br>优化 加长空格键前景图标",
-            "★★★★☆");
+            "5");
         putLables(
             "设计创意",
             "IM追清风",
@@ -30,7 +30,7 @@ switch (skinID) {
             "614KB",
             "本皮肤素材来源自《贪吃蛇大作战》游戏，该游戏是一款非常好玩的趣味类游戏，玩法经典的竞技模式，手速提高的关卡难度，策略掌控的时机把握，将带你重温儿时挑战的休闲操作。",
             "",
-            "* * * *");
+            "4");
         break;
     case "69347a70-bc19-11e6-9598-0800200c9a66":
         skinInfo(
@@ -39,7 +39,7 @@ switch (skinID) {
             "1.8MB",
             "亲爱的召唤师们，小飞为大家带来一款超级帅气的皮肤，8款王者荣耀游戏中帅到爆炸的英雄皮肤变变变！嗷嗷嗷～快来翻牌子吧！Tips:输入皮肤中英雄的名字上屏后可触发彩蛋哦~",
             "",
-            "* * * * *",
+            "3",
             "gif");
         putLables(
             "游戏动漫",
@@ -56,9 +56,9 @@ switch (skinID) {
             "1.0MB",
             "扭着，扭着扭着扭着~",
             "",
-            "* * * * *");
+            "5");
         break;
-}
+};
 
 
 //下面是一些函数
@@ -68,7 +68,28 @@ function skinInfo(name, author, size, description, update, star, type) {
     $(".skin-name").html(name);
     $(".skin-author").html(author);
     $(".skin-size").html(size);
-    $(".skin-star").html(star);
+    switch (star) {
+        case "5":
+            $(".skin-star").html("★★★★★");
+            break;
+        case "4":
+            $(".skin-star").html("★★★★☆");
+            break;
+        case "3":
+            $(".skin-star").html("★★★☆☆");
+            break;
+        case "2":
+            $(".skin-star").html("★★☆☆☆");
+            break;
+        case "1":
+            $(".skin-star").html("★☆☆☆☆");
+            break;
+        default:
+            $(".skin-star").html("★★★★★");
+            break;
+
+    };
+
     $(".skin-description-content").html(description);
     if (update) {
         $(".skin-description-title").removeClass("none");
