@@ -85,7 +85,7 @@ function skinInfo(name, author, size, description, update, star, type) {
             $(".skin-star").html("★☆☆☆☆");
             break;
         default:
-            $(".skin-star").html("★★★★★");
+            $(".skin-star").html("☆☆☆☆☆");
             break;
     };
 
