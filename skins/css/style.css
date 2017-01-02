@@ -27,7 +27,7 @@ ul {
 
 .nomore {
     font-size: 12px;
-    color: #999;
+    color: #ccc;
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -138,6 +138,8 @@ ul {
 
 #item .skin-sas {
     text-align: center;
+    font-size: 14px;
+    color: #7f7f7f;
 }
 
 #item .skin-details-preview img {
@@ -155,7 +157,7 @@ ul {
 
 #item .skin-description-content,
 #item .skin-description-update {
-    font-size: 13px;
+    font-size: 14px;
     color: #7f7f7f;
 }
 
