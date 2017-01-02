@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     //功能未开发
-    $(".share,.like").click(function () {
+    $(".unfinished").click(function () {
         alert("很抱歉，此功能尚未开发完成！");
     });
 
