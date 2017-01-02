@@ -164,6 +164,10 @@ ul {
     padding-bottom: 15px;
 }
 
+#item .lables {
+    padding-bottom: 20px;
+}
+
 #item .back,
 #item .share,
 #item .like {
@@ -181,7 +185,7 @@ ul {
     line-height: 30px;
     float: left;
     margin-top: -3px;
-    left: 10px;
+    left: 12px;
 }
 
 #item .share {
@@ -189,17 +193,17 @@ ul {
     height: 30px;
     line-height: 30px;
     float: left;
-    left: 15px;
+    left: 18px;
 }
 
 #item .like {
     width: 30px;
     height: 30px;
     line-height: 30px;
-    right: 15px;
+    right: 18px;
 }
 
-.navbar-fixed-bottom {
+#item .navbar-fixed-bottom {
     padding: 15px 0px;
     border-top: 1pt solid #eeeeee;
 }
