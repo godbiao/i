@@ -123,7 +123,7 @@ ul {
 #item .navbar-fixed-top {
     background-color: #f7f7f7;
     font-size: 16px;
-    padding: 15px 0px;
+    padding: 12px 0px;
 }
 
 #item .navbar-fixed-bottom {
@@ -155,8 +155,8 @@ ul {
 }
 
 .navbar-fixed-bottom {
-    padding: 20px 0px;
-    border-top: 1px solid #e5e5e5;
+    padding: 15px 0px;
+    border-top: 1pt solid #e5e5e5;
 }
 
 #item .share {
