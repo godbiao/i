@@ -147,7 +147,9 @@ ul {
 }
 
 #item .skin-description {
-    padding: 15px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 15px;
 }
 
 #item .skin-description-title {
@@ -159,6 +161,7 @@ ul {
 #item .skin-description-update {
     font-size: 14px;
     color: #7f7f7f;
+    padding-bottom: 15px;
 }
 
 #item .back,
