@@ -177,6 +177,7 @@ ul {
     border: 1px solid #abacb0;
     text-align: center;
     border-radius: 300px;
+    cursor: pointer;
 }
 
 #item .back {

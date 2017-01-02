@@ -15,6 +15,13 @@ switch (skinID) {
             "基于讯飞输入法官方默认韵白皮肤修改而成： <br> 1. 按钮圆角等微调， 按下及气泡效果不闪眼 <br> 2. 字母配色调整 整体更柔和 <br> 3. 你要的大空格, 支持了26键 <br> 4. 更换了难看的默认字体 <br> 5. 超小皮肤包， 低内存占用， 更流畅 ",
             "--2016年12月13日<br>修复 修复点划布局9键拼音分词在部分版本上显示异常问题 <br>优化 将难以理解的分词符号【’】 修改为文字【 分词】 <br>优化 调小了按键气泡背景（ 设置 - 键盘设置 - 开启按键气泡）<br>--2016 年12月03日 <br>修复 修复AB键盘‘ 发送键’ 错位问题<br> --2016 年11月30日 <br>优化 去除A / L键左右侧盲区 <br>优化 增大ab及退格键的间距, 减小误触概率 <br>优化 加长空格键前景图标",
             "* * * * *");
+        putLables(
+            "设计创意",
+            "IM追清风",
+            "韵白",
+            "柔美",
+            "大空格",
+            "字体");
         break;
     case "40ed1290-cbd5-11e6-9598-0800200c9a66":
         skinInfo(
@@ -34,6 +41,13 @@ switch (skinID) {
             "",
             "* * * * *",
             "gif");
+        putLables(
+            "游戏动漫",
+            "IM追清风",
+            "王者荣耀",
+            "动态",
+            "音乐",
+            "彩蛋");
         break;
     case "5f7b6940-acaa-11e6-9598-0800200c9a66":
         skinInfo(
@@ -84,6 +98,38 @@ function skinInfo(name, author, size, description, update, star, type) {
 
     //全局标题
     $("title").html(name + " - " + author + " - " + title);
+}
+
+
+//打标签
+function putLables(moren, primary, success, info, warning, danger) {
+    if (moren !== "" || primary !== "" || success !== "" || info !== "" || warning !== "" || danger !== "") {
+        $(".lables").removeClass("none");
+    }
+
+    if (moren !== "") {
+        $(".label-default").removeClass("none").html(moren);
+    }
+
+    if (primary !== "") {
+        $(".label-primary").removeClass("none").html(primary);
+    }
+
+    if (success !== "") {
+        $(".label-success").removeClass("none").html(success);
+    }
+
+    if (info !== "") {
+        $(".label-info").removeClass("none").html(info);
+    }
+
+    if (warning !== "") {
+        $(".label-warning").removeClass("none").html(warning);
+    }
+
+    if (danger !== "") {
+        $(".label-danger").removeClass("none").html(danger);
+    }
 }
 
 //获取皮肤ID
