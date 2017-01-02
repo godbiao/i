@@ -144,6 +144,7 @@ ul {
 
 #item .skin-details-preview img {
     width: 100%;
+    border-radius: 5px;
 }
 
 #item .skin-description {
@@ -165,7 +166,7 @@ ul {
 }
 
 #item .lables {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 #item .back,
