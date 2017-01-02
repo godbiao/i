@@ -143,6 +143,21 @@ ul {
     width: 100%;
 }
 
+#item .skin-description {
+    padding: 15px 10px;
+}
+
+#item .skin-description-title {
+    font-size: 14px;
+    color: #181818;
+}
+
+#item .skin-description-content,
+#item .skin-description-update {
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
 #item .back,
 #item .share,
 #item .like {
@@ -161,21 +176,20 @@ ul {
     float: left;
     margin-top: -3px;
     left: 10px;
-    font-size: 20px;
 }
 
 #item .share {
-    width: 33px;
-    height: 33px;
-    line-height: 32px;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
     float: left;
     left: 15px;
 }
 
 #item .like {
-    width: 33px;
-    height: 33px;
-    line-height: 32px;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
     right: 15px;
 }
 
