@@ -58,6 +58,16 @@ switch (skinID) {
             "",
             "5");
         break;
+    case "75330890-0da2-11e5-b939-0800200c9a66":
+        skinInfo(
+            "SmartisanOS2.0",
+            "IM追清风",
+            "87KB",
+            "锤子手机默认输入法官方界面风格2.0升级版，欢迎下载体验。<br>->界面配色为锤子手机量身定做<br>->你要的大空格键",
+            "",
+            "3",
+            "png");
+        break;
 };
 
 
@@ -103,11 +113,18 @@ function skinInfo(name, author, size, description, update, star, type) {
     } else {
         //预览图切换	
         $(".preview").click(function () {
-                $(this).addClass("none").siblings().removeClass("none");
-            })
-            //预览图
-        $(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
-        $(".preview_26").attr("src", "res/it/" + skinID + "_26.jpg");
+            $(this).addClass("none").siblings().removeClass("none");
+        });
+        //预览图
+        if (type == "png") {
+            $(".preview_9").attr("src", "res/it/" + skinID + "_9.png");
+            $(".preview_26").attr("src", "res/it/" + skinID + "_26.png");
+        } else {
+            $(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
+            $(".preview_26").attr("src", "res/it/" + skinID + "_26.jpg");
+        }
+
+
     }
 
 
