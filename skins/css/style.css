@@ -4,7 +4,7 @@ body {
 }
 
 #item {
-    padding-top: 60px;
+    padding-top: 55px;
     background-color: #fff;
     padding-bottom: 60px;
 }
@@ -141,33 +141,38 @@ ul {
 
 #item .skin-details-preview img {
     width: 100%;
-    transition: opacity 0.3s, transform 0.3s;
 }
 
-#item .skin-details-preview img:active {
-    opacity: 0.75;
-    transform: scale(0.75);
+#item .back,
+#item .share,
+#item .like {
+    color: #656970;
+    font-size: 10px;
+    position: absolute;
+    border: 1px solid #abacb0;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 300px;
 }
 
 #item .back {
     float: left;
-    position: absolute;
-}
-
-.navbar-fixed-bottom {
-    padding: 15px 0px;
-    border-top: 1pt solid #e5e5e5;
+    margin-top: -5px;
 }
 
 #item .share {
     float: left;
-    position: absolute;
 }
 
 #item .like {
-    display: block;
     right: 0px;
-    position: absolute;
+}
+
+.navbar-fixed-bottom {
+    padding: 15px 0px;
+    border-top: 1pt solid #eeeeee;
 }
 
 #item .skin-download {
