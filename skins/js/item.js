@@ -58,7 +58,8 @@ var Request = new Object();
 Request = GetRequest();
 var id;
 var skinID = Request['id'];
-for (var i = 0; i < skins.length; i++) {
+var s_len = skins.length
+for (var i = 0; i < s_len; i++) {
 	if (skins[i].id == skinID) {
 		var s = skins[i];
 		skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type);
