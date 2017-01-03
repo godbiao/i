@@ -54,6 +54,13 @@ ul {
 	width: 100%;
 }
 
+.skin-name {
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 
 /*皮肤列表*/
 
