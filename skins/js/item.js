@@ -50,12 +50,32 @@ var skins = [
 		"star": "3",
 		"type": "png",
 		"lables": ["", "", "", "", "", ""]
+	}, {
+		"id": "d2af7aa0-2320-11e6-bdf4-0800200c9a66",
+		"name": "天空の路✫星轨·动态",
+		"author": "IM标神",
+		"size": "2.0MB",
+		"description": "美在那个刹那的璀璨。",
+		"update": "",
+		"star": "4",
+		"type": "gif",
+		"lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"]
+	}, {
+		"id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
+		"name": "无缝线框",
+		"author": "IM追清风",
+		"size": "42KB",
+		"description": "我就想问这四不四你想要的无缝线框~",
+		"update": "",
+		"star": "3",
+		"type": "png",
+		"lables": ["", "", "", "", "", ""]
 	}
 ];
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
-//遍历ID进行匹配数据
+//详情页面遍历ID进行匹配数据
 var Request = new Object();
 Request = GetRequest();
 var skinID = Request['id'];
@@ -67,7 +87,23 @@ for (var i = 0; i < s_len; i++) {
 		putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
 		break;
 	}
-}
+};
+
+//首页皮肤列表
+for (var i = 0; i < s_len; i++) {
+	var sid = skins[i].id;
+	var sname = skins[i].name;
+	var spreview = "res/it/" + sid + "_preview.jpg";
+	var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+	var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+
+	if (i > 3) {
+		$("#row-hot").append(rowhot);
+	} else {
+		$("#row-new").append(rownew);
+	}
+
+};
 
 //下面是一些函数
 //替换皮肤信息
