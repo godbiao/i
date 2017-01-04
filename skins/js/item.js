@@ -105,6 +105,22 @@ for (var i = 0; i < s_len; i++) {
 
 };
 
+
+$(".like").click(function () {
+	$.cookie(skinID, 1);
+	$(this).html("已赞");
+	$(this).addClass("liked");
+});
+
+
+if ($.cookie(skinID) == 1) {
+	$(".like").html("已赞");
+	$(".like").addClass("liked");
+	$(".liked").click(function () {
+		alert("已经赞过了哦");
+	});
+}
+
 //下面是一些函数
 //替换皮肤信息
 function skinInfo(name, author, size, description, update, star, type) {
@@ -156,7 +172,6 @@ function skinInfo(name, author, size, description, update, star, type) {
 			$(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
 			$(".preview_26").attr("src", "res/it/" + skinID + "_26.jpg");
 		}
-
 
 	}
 
