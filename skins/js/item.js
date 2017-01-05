@@ -105,21 +105,31 @@ for (var i = 0; i < s_len; i++) {
 
 };
 
-
+//点赞逻辑
+var likeTime = 0;
 $(".like").click(function () {
-	$.cookie(skinID, 1);
-	$(this).html("已赞");
-	$(this).addClass("liked");
+	if ($.cookie(skinID) != 1) {
+		$.cookie(skinID, 1, {
+			expires: 365
+		});
+		$(this).html("已赞");
+		$(this).addClass("liked");
+		alert("已赞");
+	} else {
+		if (likeTime >= 2) {
+			alert("你到底想干哈？");
+		} else {
+			alert("已经赞过了");
+		}
+		likeTime++;
+	}
 });
-
 
 if ($.cookie(skinID) == 1) {
 	$(".like").html("已赞");
 	$(".like").addClass("liked");
-	$(".liked").click(function () {
-		alert("已经赞过了哦");
-	});
 }
+
 
 //下面是一些函数
 //替换皮肤信息
