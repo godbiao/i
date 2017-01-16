@@ -11,14 +11,64 @@
 		}
 		
 		.uuid {
-			font-family: monospace;
+			font-family: "Code";
 			font-size: 40px;
 			width: 80%;
 			margin: 300px auto;
 			text-align: center;
 		}
+		
+		@font-face {
+			font-family: Code;
+			src: url("Courier New.ttf");
+		}
 
 	</style>
+
+	<script>
+		Date.prototype.Format = function(fmt) { //author: marver 
+			var o = {
+				"M+": this.getMonth() + 1, //月份 
+				"d+": this.getDate(), //日 
+				"h+": this.getHours(), //小时 
+				"m+": this.getMinutes(), //分 
+				"s+": this.getSeconds(), //秒 
+				"q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+				"S": this.getMilliseconds() //毫秒 
+			};
+			if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+			for (var k in o)
+				if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+			return fmt;
+		}
+
+		function oddNumber(num) {
+			var taskTime = new Date().Format("yyyyMMddhhmmss");;
+			//将数据库中最大的一条记录取出来,假如是：HL20150921105230001
+			//String yd ="HL20150921105230001";
+			if (num == "" || num == null) {
+				num = "HL20150921105230001";
+			}
+
+			var lastNumber = num.substring(num.length - 3);
+			var newNumber = (parseInt(lastNumber) + 1);
+			if (newNumber.toString().length == 1) {
+				newNumber = "00" + newNumber;
+			}
+			if (newNumber.toString().length == 2) {
+				newNumber = "0" + newNumber;
+			}
+
+			var temp = "HL" + taskTime + newNumber;
+			return temp;
+		}
+
+		function CGUI() {
+			var uuid = document.getElementById("GUIDshow").innerHTML;
+			document.getElementById("GUIDshow").innerHTML = oddNumber(uuid);
+		}
+
+	</script>
 </head>
 
 <body>
@@ -51,15 +101,6 @@
 			}
 
 			return uuid.join('');
-		}
-
-
-
-		function copyUUID() {
-			var uuid1 = document.getElementById("uuid");
-			uuid1.select(); // 选择对象
-			document.execCommand("Copy"); // 执行浏览器复制命令
-			alert("已复制");
 		}
 
 	</script>
