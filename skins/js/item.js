@@ -1,6 +1,26 @@
 //皮肤数据表
 var skins = [
 	{
+		"id": "0b7a9a20-dcbe-11e6-9598-0800200c9a66",
+		"name": "微信Style",
+		"author": "IM追清风",
+		"size": "42KB",
+		"description": "完美复刻微信界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
+		"update": "",
+		"star": "5",
+		"type": "png",
+		"lables": ["设计创意", "蓝色", "微信", "简约", "大空格", "低候选栏"]
+	}, {
+		"id": "084b9eb0-dd29-11e6-9598-0800200c9a66",
+		"name": "QQStyle",
+		"author": "IM追清风",
+		"size": "49KB",
+		"description": "完美复刻手机QQ界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
+		"update": "",
+		"star": "5",
+		"type": "png",
+		"lables": ["设计创意", "绿色", "QQ", "简约", "大空格", "低候选栏"]
+	}, {
 		"id": "91a44990-9a90-11e6-bdf4-0800200c9a66",
 		"name": "大空格の韵白[柔美版]",
 		"author": "IM追清风",
