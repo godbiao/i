@@ -21,6 +21,16 @@ var skins = [
 		"type": "png",
 		"lables": ["设计创意", "绿色", "QQ", "简约", "大空格", "低候选栏"]
 	}, {
+		"id": "0d6dcee0-02f5-4c96-8fa6-b4dfed394142",
+		"name": "酷安Style·水鸭青",
+		"author": "IM标神",
+		"size": "38KB",
+		"description": "完美复刻酷安APP水鸭青主题界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
+		"update": "",
+		"star": "5",
+		"type": "png",
+		"lables": ["设计创意", "青色", "酷安", "简约", "大空格", "低候选栏"]
+	}, {
 		"id": "11a44990-9a90-11e6-bdf4-0800200c9a66",
 		"name": "乳の白",
 		"author": "IM标神",
