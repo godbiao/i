@@ -35,7 +35,7 @@ function showID(key) {
 		$(this).html(sid);
 		if (sid == "1119") {
 			$("#popup").show();
-			$("#popup").html("1119,1120,1121,1123,1124,1245");
+			$("#popup").html("1119,1120,1121,1122,1123,1124,1245");
 		}
 		if (sid == "1116") {
 			$("#popup").show();
