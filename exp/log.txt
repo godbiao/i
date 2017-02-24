@@ -1,0 +1,6 @@
+array (
+  'dirname' => '.',
+  'basename' => 'comb_p.png',
+  'extension' => 'png',
+  'filename' => 'comb_p',
+)
