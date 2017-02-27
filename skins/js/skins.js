@@ -10,7 +10,7 @@ var skins = [
         "star": "4",
         "type": "jpg",
         "lables": ["设计创意", "iOS6", "苹果", "简约", "iPhone", "大空格"],
-        "time": "2017-2-27"
+        "time": "2017-2-23"
 	}, {
         "id": "0b7a9a20-dcbe-11e6-9598-0800200c9a66",
         "name": "微信Style",
