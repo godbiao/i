@@ -115,7 +115,7 @@ var skins = [
         "name": "无缝线框",
         "author": "IM追清风",
         "size": "42KB",
-        "description": "我就想问这四不四你想要的无缝线框~",
+        "description": "我就想问这四不四你想要的无缝线框,大空格版哦~",
         "update": "",
         "star": "3",
         "type": "jpg",
