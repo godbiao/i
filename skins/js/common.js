@@ -1,32 +1,32 @@
 $(document).ready(function () {
 
-	//banner打开微博
-	$(".banner-weibo").click(function () {
-		window.location.href = "http://m.weibo.cn/u/1136590322";
-	});
+    //banner打开微博
+    $(".banner-weibo").click(function () {
+        window.location.href = "http://m.weibo.cn/u/1136590322";
+    });
 
-	//打开皮肤详情
-	$(".skin-id").click(function () {
-		var skinID = $(this).attr('id');
-		window.location.href = "item.html?id=" + skinID;
+    //打开皮肤详情
+    $(".skin-id").click(function () {
+        var skinID = $(this).attr('id');
+        window.location.href = "item.html?id=" + skinID;
 
-	});
+    });
 
-	//功能未开发
-	$(".unfinished").click(function () {
-		alert("很抱歉，此功能尚未开发完成！");
-	});
+    //功能未开发
+    $(".unfinished").click(function () {
+        alert("很抱歉，此功能尚未开发完成！");
+    });
 
-	$(".back").click(function () {
-		window.location.href = "index.html";
-	});
+    $(".back").click(function () {
+        window.location.href = "index.html";
+    });
 
 
-	$(window).scroll(function () {
-		if ($(window).scrollTop() > 20) {
-			$(".nomore,.split").removeClass("none");
-		}
-	});
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 20) {
+            $(".nomore,.split").removeClass("none");
+        }
+    });
 
 
 
@@ -43,7 +43,7 @@ var s_len = skins.length;
 for (var i = 0; i < s_len; i++) {
     if (skins[i].id == skinID) {
         var s = skins[i];
-        skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type);
+        skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
         putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
         break;
     }
@@ -93,10 +93,11 @@ if ($.cookie(skinID) == 1) {
 
 //下面是一些函数
 //替换皮肤信息
-function skinInfo(name, author, size, description, update, star, type) {
+function skinInfo(name, author, size, description, update, star, type, time) {
     $(".skin-name").html(name);
     $(".skin-author").html(author);
     $(".skin-size").html(size);
+    $(".skin-time").html(time);
     switch (star) {
         case "5":
             $(".skin-star").html("★★★★★");
