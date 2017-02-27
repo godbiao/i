@@ -7,7 +7,7 @@ var skins = [
         "size": "57KB",
         "description": "精仿苹果iOS10默认输入法界面风格，水果迷们可下载体验~<br>目前尚未完善，敬请期待！",
         "update": "",
-        "star": "4",
+        "star": "5",
         "type": "jpg",
         "lables": ["设计创意", "iOS10", "苹果", "简约", "iPhone", "纤细字体"],
         "time": "2017-2-27"
@@ -18,7 +18,7 @@ var skins = [
         "size": "74KB",
         "description": "苹果iOS6界面风格，经典复古，欢迎下载体验~",
         "update": "",
-        "star": "4",
+        "star": "3",
         "type": "jpg",
         "lables": ["设计创意", "iOS6", "苹果", "简约", "iPhone", "大空格"],
         "time": "2017-2-23"
