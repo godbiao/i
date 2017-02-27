@@ -118,9 +118,7 @@ var skins = [
         "description": "我就想问这四不四你想要的无缝线框~",
         "update": "",
         "star": "3",
-        "type": "png",
+        "type": "jpg",
         "lables": ["", "", "", "", "", ""]
 	}
 ];
-
-
