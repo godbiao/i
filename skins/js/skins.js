@@ -1,6 +1,17 @@
 //皮肤数据表
 var skins = [
     {
+        "id": "4e43b330-ba92-11e6-9598-0800200c9a66",
+        "name": "iOS10风格",
+        "author": "IM追清风",
+        "size": "57KB",
+        "description": "精仿苹果iOS10默认输入法界面风格，水果迷们可下载体验~<br>目前尚未完善，敬请期待！",
+        "update": "",
+        "star": "4",
+        "type": "jpg",
+        "lables": ["设计创意", "iOS10", "苹果", "简约", "iPhone", "纤细字体"],
+        "time": "2017-2-27"
+	}, {
         "id": "2863560d-00f2-4115-b042-c3fc29ab8c79",
         "name": "iOS6风格",
         "author": "IM追清风",
