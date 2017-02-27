@@ -1,6 +1,6 @@
 array (
   'dirname' => '.',
-  'basename' => 'comb_p.png',
+  'basename' => 'EMOJI.png',
   'extension' => 'png',
-  'filename' => 'comb_p',
+  'filename' => 'EMOJI',
 )

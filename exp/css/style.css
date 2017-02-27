@@ -67,7 +67,7 @@ body {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #438eea;
+    background: #666aff;
     color: #fff;
     margin: 20px auto;
     cursor: pointer;
@@ -88,7 +88,7 @@ body {
 }
 
 .new:hover {
-    background: #43eab9;
+    background-color: #575bd9;
     transform: scale(1.3);
     box-shadow: 0px 0px 30px #ccc;
 }
@@ -261,14 +261,15 @@ a.progressCancel:hover {
     height: 36px;
     box-shadow: 0 0 5px #eee;
     border-radius: 0px;
-    background-color: cornflowerblue;
+    background-color: #666aff;
     color: aliceblue;
+    cursor: pointer;
 }
 
 .pack:hover {
     color: #fff;
     border: 1px solid #fff;
-    background-color: forestgreen;
+    background-color: #4c50bf;
 }
 
 input,

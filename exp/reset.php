@@ -12,5 +12,5 @@ createDir($updir);//创建表情目录
 createDir($updir_pre);//创建聊天面板图目录
 
 echo '<h1>缓存已清理！</h1>
-<script>window.close();</script>'
+<script>window.close();</script>';
 ?>

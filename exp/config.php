@@ -1,5 +1,5 @@
 <?php
-$ip = $_SERVER["REMOTE_ADDR"];
+$ip = 'tmp/'.$_SERVER["REMOTE_ADDR"];
 $updir = $ip.'/up/';//定义表情主图上传目录
 $updir_pre =$ip.'/up_pre/';//定义聊天面板图目录
 if(file_exists($updir)){
