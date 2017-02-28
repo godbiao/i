@@ -1,12 +1,4 @@
 <?php
-//密码校验开始
-if($_POST['password']!=='admin')
-{	echo '<script>alert("对不起，您输入的密码不正确！");
-	window.history.go(-1);
-	</script>';
- die();
-}
-//密码校验结束
 
 include('inc/function.php');//引入函数
 
