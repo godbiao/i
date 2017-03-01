@@ -1,6 +1,6 @@
 <?php
 include('inc/function.php');
-include('config.php');
+@include('config.php');
 
 if(file_exists($ip)){
 	deldir($updir);//删除表情主图目录下的文件及文件夹
@@ -11,6 +11,4 @@ if(file_exists($ip)){
 createDir($updir);//创建表情目录
 createDir($updir_pre);//创建聊天面板图目录
 
-echo '<h1>缓存已清理！</h1>
-<script>window.close();</script>';
 ?>
