@@ -34,8 +34,8 @@
                     <div id="divStatus">
                         <div class="guifan">
                             格式：.PNG
-                            <br> 命名：请必须按数字顺序命名,如1.png,2.png……72.png,请勿超过72个
-                            <br> 尺寸：240x240px,小于100KB
+                            <br> 命名：请必须按数字顺序命名,如1.png,2.png……32.png,至少8个,请勿超过32个
+                            <br> 尺寸：240x240px,小于200KB
                         </div>
 
                     </div>
@@ -53,8 +53,8 @@
                     <div id="divStatus_gif">
                         <div class="guifan">
                             格式：.GIF(主图), .PNG(缩略图)
-                            <br> 主图命名：请必须按数字顺序命名,如1.gif,2.gif……36.gif,请勿超过36个
-                            <br> 缩略图命名：请必须按数字顺序命名,如preview_1.png,preview_2.png……preview_36.png,请勿超过36个
+                            <br> 主图命名：请必须按数字顺序命名,如1.gif,2.gif……32.gif,至少8个,请勿超过32个
+                            <br> 缩略图命名：请必须按数字顺序命名,如preview_1.png,preview_2.png……preview_32.png,内容及数量与gif图一一对应
                             <br> 尺寸：主图->240x240px,小于600KB;缩略图->200x200,小于100KB
                         </div>
                     </div>
@@ -103,31 +103,31 @@
                     <tr>
                         <td>名称：</td>
                         <td>
-                            <input class="w160" type="text" name="name" required="required" value="8个汉字以内" onfocus="if (value =='8个汉字以内'){value =''}" onblur="if (value ==''){value='8个汉字以内'}" />
+                            <input class="w150" type="text" name="name" required="required" value="8个汉字以内" onfocus="if (value =='8个汉字以内'){value =''}" onblur="if (value ==''){value='8个汉字以内'}" />
                         </td>
                     </tr>
                     <tr>
                         <td>作者：</td>
                         <td>
-                            <input class="w160" type="text" name="author" required="required" value="10个汉字以内" value="10个汉字以内" onfocus="if (value =='10个汉字以内'){value =''}" onblur="if (value ==''){value='10个汉字以内'}" />
+                            <input class="w150" type="text" name="author" required="required" value="10个汉字以内" value="10个汉字以内" onfocus="if (value =='10个汉字以内'){value =''}" onblur="if (value ==''){value='10个汉字以内'}" />
                         </td>
                     </tr>
                     <tr>
                         <td>版本：</td>
                         <td>
-                            <input class="w160" type="number" name="version" required="required" step="0.1" value="1.5" onfocus="if (value =='1.5'){value =''}" onblur="if (value ==''){value='1.5'}" />
+                            <input class="w150" type="number" name="version" required="required" step="0.1" value="1.5" onfocus="if (value =='1.5'){value =''}" onblur="if (value ==''){value='1.5'}" />
                         </td>
                     </tr>
                     <tr hidden="hidden">
                         <td title="新的表情，这里请清空">ID：</td>
                         <td>
-                            <input class="w160" type="text" name="uid" value="" />
+                            <input class="w150" type="text" name="uid" value="" />
                         </td>
                     </tr>
                     <tr>
                         <td>描述：</td>
                         <td>
-                            <textarea class="w160" name="description" required="required" rows="3" cols="22" value="80个汉字以内，充分体现表情的形象特色或故事情节" onfocus="if (value =='80个汉字以内，充分体现表情的形象特色或故事情节'){value =''}" onblur="if (value ==''){value='80个汉字以内，充分体现表情的形象特色或故事情节'}">80个汉字以内，充分体现表情的形象特色或故事情节</textarea>
+                            <textarea class="w150" name="description" required="required" rows="3" cols="22" value="80个汉字以内，充分体现表情的形象特色或故事情节" onfocus="if (value =='80个汉字以内，充分体现表情的形象特色或故事情节'){value =''}" onblur="if (value ==''){value='80个汉字以内，充分体现表情的形象特色或故事情节'}">80个汉字以内，充分体现表情的形象特色或故事情节</textarea>
                         </td>
                     </tr>
                     <tr>
@@ -147,7 +147,7 @@
     </div>
 
     <div id="footer" class="footer">
-        <i><span>Alpha-1.0.20170224</span> by godBiao</i>
+        <i><span>Alpha-1.0.20170301</span> by godBiao</i>
     </div>
 
 
@@ -192,7 +192,7 @@
                 file_size_limit: "200 KB",
                 file_types: "*.png",
                 file_types_description: "选择图片",
-                file_upload_limit: 72,
+                file_upload_limit: 32,
                 file_queue_limit: 0,
                 custom_settings: {
                     progressTarget: "fsUploadProgress",
@@ -235,7 +235,7 @@
                 file_size_limit: "600 KB",
                 file_types: "*.png;*.gif",
                 file_types_description: "选择图片",
-                file_upload_limit: 72,
+                file_upload_limit: 64,
                 file_queue_limit: 0,
                 custom_settings: {
                     progressTarget: "fsUploadProgress_gif",
@@ -279,7 +279,7 @@
                 file_size_limit: "50 KB",
                 file_types: "*.png",
                 file_types_description: "选择图片",
-                file_upload_limit: 72,
+                file_upload_limit: 1,
                 file_queue_limit: 0,
                 custom_settings: {
                     progressTarget: "fsUploadProgress_pre",

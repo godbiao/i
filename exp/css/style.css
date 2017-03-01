@@ -276,12 +276,12 @@ input,
 textarea {
     font-size: 12px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #eee;
+    /*    border-radius: 5px;*/
     color: #888;
 }
 
-.w160 {
+.w150 {
     display: block;
     width: 160px;
 }
