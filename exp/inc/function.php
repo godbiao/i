@@ -94,21 +94,21 @@ function recurse_copy($src,$des) {
 function write_ini_file($assoc_arr, $path, $has_sections=FALSE) { 
     $content = ""; 
     if ($has_sections) { 
-	$content .= "#注意文件为utf-8格式\n";
+	$content .= "#注意文件为utf-8格式\r\n";
         foreach ($assoc_arr as $key=>$elem) {
-            $content .= "[".$key."]\n"; 
+            $content .= "[".$key."]\r\n"; 
             foreach ($elem as $key2=>$elem2) { 
                 if(is_array($elem2)) 
                 { 
                     for($i=0;$i<count($elem2);$i++) 
                     { 
-                        $content .= $key2."[]=".$elem2[$i]."\n";
+                        $content .= $key2."[]=".$elem2[$i]."\r\n";
                     } 
                 }
-                else if($elem2=="") $content .= $key2." = \n"; 
-                else $content .= $key2."=".$elem2."\n"; 
+                else if($elem2=="") $content .= $key2." = \r\n"; 
+                else $content .= $key2."=".$elem2."\r\n"; 
             } 
-			$content .= "\n";
+			$content .= "\r\n";
         } 
     } 
     else { 
@@ -117,11 +117,11 @@ function write_ini_file($assoc_arr, $path, $has_sections=FALSE) {
             { 
                 for($i=0;$i<count($elem);$i++) 
                 { 
-                    $content .= $key2."[] = ".$elem[$i]."\n"; 
+                    $content .= $key2."[] = ".$elem[$i]."\r\n"; 
                 } 
             } 
-            else if($elem=="") $content .= $key2." = n"; 
-            else $content .= $key2."=".$elem."\n"; 
+            else if($elem=="") $content .= $key2." = \r\n"; 
+            else $content .= $key2."=".$elem."\r\n"; 
         } 
     }
     if (!$handle = fopen($path, 'w')) { 
