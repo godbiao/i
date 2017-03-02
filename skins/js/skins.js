@@ -2,7 +2,7 @@
 var skins = [
     {
         "id": "aee9b17a-95e8-d1f5-c227-58b7e413f319",
-        "name": "iOS10风格·BETA",
+        "name": "MIUI 8",
         "author": "IM标神",
         "size": "49KB",
         "description": "亲们，对不住了，来晚了~纯手工仿制MIUI 8版本开始内置的第三方输入法界面，欢迎下载体验。<br>界面字号相对默认皮肤普遍调小了，嫌小的可以再设置里面调整哦~",
