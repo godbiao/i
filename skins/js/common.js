@@ -74,7 +74,7 @@ $(".like").click(function () {
         });
         $(this).html("已赞");
         $(this).addClass("liked");
-		_czc.push(["_trackEvent", "skins", "like", skinID, name]);
+		_czc.push(["_trackEvent", "skins", "like", skinID, $(".skin-name").html()]);
         alert("已赞");
     } else {
         if (likeTime >= 2) {
