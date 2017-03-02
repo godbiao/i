@@ -94,8 +94,9 @@ function recurse_copy($src,$des) {
 function write_ini_file($assoc_arr, $path, $has_sections=FALSE) { 
     $content = ""; 
     if ($has_sections) { 
-        foreach ($assoc_arr as $key=>$elem) { 
-            $content .= "\n[".$key."]\n"; 
+	$content .= "#注意文件为utf-8格式\n";
+        foreach ($assoc_arr as $key=>$elem) {
+            $content .= "[".$key."]\n"; 
             foreach ($elem as $key2=>$elem2) { 
                 if(is_array($elem2)) 
                 { 
@@ -107,6 +108,7 @@ function write_ini_file($assoc_arr, $path, $has_sections=FALSE) {
                 else if($elem2=="") $content .= $key2." = \n"; 
                 else $content .= $key2."=".$elem2."\n"; 
             } 
+			$content .= "\n";
         } 
     } 
     else { 
