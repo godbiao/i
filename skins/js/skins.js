@@ -123,7 +123,7 @@ var skins = [
 		"time": "2016-11-18"
 	}, {
 		"id": "75330890-0da2-11e5-b939-0800200c9a66",
-		"name": "SmartisanOS2.0",
+		"name": "锤子SmartisanOS2.0",
 		"author": "追清风",
 		"size": "76KB",
 		"description": "锤子手机默认输入法官方界面风格2.0升级版，欢迎下载体验。<br>->界面配色为锤子手机量身定做<br>->你要的大空格键",
