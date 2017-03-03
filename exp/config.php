@@ -109,7 +109,7 @@ $info = array(
                 ));
 
 include('inc/getpinyin.php');//中文转拼音
-$rootdir = get_pinyin($name).date(m);//导出的表情包包名转为表情名称的拼音
+$rootdir ='tmp/'.get_pinyin($name).date(m);//导出的表情包包名转为表情名称的拼音
 
 //$rootdir = date("YmdHis");
 $expdir = $rootdir.'/'.$rootdir;
