@@ -109,11 +109,13 @@ $info = array(
                 ));
 
 include('inc/getpinyin.php');//中文转拼音
-$rootdir ='tmp/'.get_pinyin($name).date(m);//导出的表情包包名转为表情名称的拼音
+$expname =get_pinyin($name).date(m);//导出的表情包包名转为表情名称的拼音
 
-//$rootdir = date("YmdHis");
-$expdir = $rootdir.'/'.$rootdir;
-$qqdir = $expdir.'/templet/layout/';
+$exportPath = $ip.'/'.$expname;//设置需要打包的目录
+$filename = $exportPath.".exp";//设置压缩包的文件名
+
+$expdir = $ip.'/'.$expname.'/'.$expname;//设置表情根目录
+$qqdir = $expdir.'/templet/layout/'; //以下为表情各配置文件目录
 $qqdir_land = $expdir.'/templet/layout_land/';
 $qqres = $expdir.'/templet/res/';
 $wxdir = $expdir.'/templet_mm/layout/';

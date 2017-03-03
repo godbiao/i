@@ -1,10 +1,6 @@
 <?php
 
 include('inc/function.php');//引入函数
-
-
-//数据处理开始
-
 include('config.php');//获取配置文件
 
 createDir($qqdir);//创建目录
@@ -20,17 +16,10 @@ write_ini_file($info,$expdir.'/info.ini', true);
 recurse_copy($updir,$qqres);
 recurse_copy($updir_pre,$expdir);
 
-$exportPath = $rootdir;//设置需要打包的目录
-$filename =$rootdir.".exp";//设置压缩包的文件名
-
 include('pack.php');//开始打包并下载
 
-unlink($filename);//删除文件
-delDir($rootdir);//删除目录
+unlink($filename);//删除表情包文件
+delDir($exportPath);//删除表情目录
 
-
-//数据处理结束
- 
- 
 
 ?>
