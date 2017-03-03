@@ -53,7 +53,7 @@ for (var i = 0; i < s_len; i++) {
 for (var i = 0; i < s_len; i++) {
 	var sid = skins[i].id;
 	var sname = skins[i].name;
-	var spreview = "res/it/" + sid + "_preview.jpg";
+	var spreview = "../res/it/" + sid + "_preview.jpg";
 	var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
 	var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
 
@@ -138,11 +138,11 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 		});
 		//预览图
 		if (type == "png") {
-			$(".preview_9").attr("src", "res/it/" + skinID + "_9.png");
-			$(".preview_26").attr("src", "res/it/" + skinID + "_26.png");
+			$(".preview_9").attr("src", "../res/it/" + skinID + "_9.png");
+			$(".preview_26").attr("src", "../res/it/" + skinID + "_26.png");
 		} else {
-			$(".preview_9").attr("src", "res/it/" + skinID + "_9.jpg");
-			$(".preview_26").attr("src", "res/it/" + skinID + "_26.jpg");
+			$(".preview_9").attr("src", "../res/it/" + skinID + "_9.jpg");
+			$(".preview_26").attr("src", "../res/it/" + skinID + "_26.jpg");
 		}
 
 	}
