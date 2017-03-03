@@ -41,7 +41,7 @@
 						<span class="legend">上传表情主图</span>
 						<div id="divStatus">
 							<div class="guifan">
-								格式：.PNG
+								格式：.PNG 透明背景,2像素白色描边
 								<br> 命名：请必须按数字顺序命名,如1.png,2.png……32.png,至少8个,请勿超过32个
 								<br> 尺寸：240x240px,小于200KB
 							</div>
@@ -60,7 +60,7 @@
 						<span class="legend">上传表情主图及输入面板缩略图</span>
 						<div id="divStatus_gif">
 							<div class="guifan">
-								格式：.GIF(主图), .PNG(缩略图)
+								格式：.GIF(主图), .PNG(缩略图),透明背景,2像素白色描边
 								<br> 主图命名：请必须按数字顺序命名,如1.gif,2.gif……32.gif,至少8个,请勿超过32个
 								<br> 缩略图命名：请必须按数字顺序命名,如preview_1.png,preview_2.png……preview_32.png,内容及数量与gif图一一对应
 								<br> 尺寸：主图->240x240px,小于600KB;缩略图->200x200,小于100KB
@@ -80,7 +80,7 @@
 						<span class="legend">上传本地表情列表封面图</span>
 						<div id="divStatus_pre">
 							<div class="guifan">
-								格式：.PNG 透明背景,1像素白色描边
+								格式：.PNG 透明背景,2像素白色描边
 								<br> 命名：无要求，1个
 								<br> 尺寸：Android->75x75px,小于40KB;iOS->99x99px,小于50KB
 							</div>
