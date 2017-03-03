@@ -150,7 +150,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
 	//下载皮肤
 	$(".skin-download").click(function () {
-		window.location.href = "res/it/" + skinID + ".it";
+		window.location.href = "../res/it/" + skinID + ".it";
 		_czc.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
 	});
 
