@@ -74,7 +74,7 @@ $(".like").click(function () {
 		});
 		$(this).html("已赞");
 		$(this).addClass("liked");
-		_czc.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
+		_hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
 		alert("已赞");
 	} else {
 		if (likeTime >= 2) {
@@ -151,7 +151,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 	//下载皮肤
 	$(".skin-download").click(function () {
 		window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
-		_czc.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+		_hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
 	});
 
 	//全局标题
@@ -205,12 +205,3 @@ function GetRequest() {
 	}
 	return theRequest;
 }
-
-//百度统计
-var _hmt = _hmt || [];
-(function () {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?fa9dd4e58caec08d0c9ef7f4f34aab15";
-	var s = document.getElementsByTagName("script")[0];
-	s.parentNode.insertBefore(hm, s);
-})();
