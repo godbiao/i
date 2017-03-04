@@ -1,0 +1,15 @@
+<script>
+	function getsid(sum, num) {
+		var a = [];
+		for (var i = 0; i < sum; i++) {
+			a.push(i);
+		}
+		a.sort(function () {
+			return 0.5 - Math.random()
+		});
+		a.length = num;
+		return a;
+	}
+
+	console.log(getsid(20, 3));
+</script>
